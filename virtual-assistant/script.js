@@ -70,7 +70,7 @@ async function takeCommand(message) {
 }
 
 async function askChatGPT(question) {
-    const apiKey = "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"; // Replace with your actual OpenAI API key
+    const apiKey = ""; // Replace with your actual OpenAI API key
     const apiUrl = "https://api.openai.com/v1/completions";
 
     const requestBody = {
