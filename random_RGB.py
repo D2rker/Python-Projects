@@ -11,11 +11,11 @@ def random_color():
   random_color = (r, g, b)
   return random_color
 
-direction = [0, 90, 180, 270]
+direction = [0,90,180,270]
 tim.pensize(15)
 tim.speed("fastest")
 
-for _ range (200):
+for _ in range (200):
   tim.color(random_color())
   tim.forward(30)
-  tim.setheading(random.choice(diections))
+  tim.setheading(random.choice(direction))
