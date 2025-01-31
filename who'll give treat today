@@ -1,0 +1,7 @@
+import random
+
+name = input("Give everybody's name separated by comma: ")
+name = name.split(",")
+pay = random.choice(name)
+
+print(f"{pay} is going to buy meal today")
