@@ -1,0 +1,14 @@
+r1 = [" ", " ", " "]
+r2 = [" ", " ", " "]
+r3 = [" ", " ", " "]
+
+map = [r1, r2, r3]
+
+print(f"{r1}\n{r2}\n{r3}")
+
+position = input("Where do you want to put the treasure?: ")
+horizontal = int(position[0])
+vertical = int(position[1])
+select = map[vertical-1]
+select[horizontal-1] = "x"
+print(f"{r1}\n{r2}\n{r3}")
