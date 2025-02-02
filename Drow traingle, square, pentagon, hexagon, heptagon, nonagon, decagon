@@ -1,0 +1,21 @@
+import random
+import turtle as t
+
+tim = t.Turtle()  # Corrected the turtle instance creation
+
+colors = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue",
+          "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]  # Fixed color names
+
+def draw_shape(num_sides):
+    """Draws a shape with the given number of sides."""
+    angle = 360 / num_sides
+    for _ in range(num_sides):
+        tim.forward(100)  # Reduced size for better visualization
+        tim.right(angle)
+
+# Loop through shapes with sides from 3 to 10
+for shape_side_n in range(3, 11):
+    tim.color(random.choice(colors))
+    draw_shape(shape_side_n)
+
+t.done()  # Keeps the turtle graphics window open
