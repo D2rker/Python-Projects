@@ -1,0 +1,3 @@
+num = int(input("Enter a number: "))
+rev_num = int(str(num)[::-1])
+print(f"Reversed number: {rev_num}")
